@@ -18,17 +18,9 @@ async function hitApi(){
     }
 }
 
-// hitApi();
-// let hitApiData = `{
-//     "ip":"42.110.166.21","network":"42.110.160.0/20","version":"IPv4","city":"Kolkata","region":"West Bengal","region_code":"WB","country":"IN","country_name":"India","country_code":"IN","country_code_iso3":"IND","country_capital":"New Delhi","country_tld":".in","continent_code":"AS","in_eu":false,"postal":"700059","latitude":22.518,"longitude":88.3832,"timezone":"Asia/Kolkata","utc_offset":"+0530","country_calling_code":"+91","currency":"INR","currency_name":"Rupee","languages":"en-IN,hi,bn,te,mr,ta,ur,gu,kn,ml,or,pa,as,bh,sat,ks,ne,sd,kok,doi,mni,sit,sa,fr,lus,inc","country_area":3287590,"country_population":1352617328,"asn":"AS38266","org":"Vodafone Idea Ltd"
-// }`
-// hitApiData = JSON.parse(hitApiData);
-// console.log(hitApiData);
-
-
 async function collectInfo(){
     let data = await hitApi();
-    console.log(data);
+    // console.log(data);
 
     let location = {
         lat: data.latitude,
